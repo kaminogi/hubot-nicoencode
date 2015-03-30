@@ -1,9 +1,12 @@
 {
   "name": "hubot-nicoencode",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
-  "author": "dionore",
-  "description": "A simple helpful robot for your Company",
+  "author": {
+    "name": "kaminogi"
+  },
+  "main": "scripts/encode.coffee",
+  "description": "MP3 encoder from NicoNico Douga / Experimental use only",
   "dependencies": {
     "hubot": "^2.11.4",
     "hubot-heroku-keepalive": "0.0.4",
@@ -11,5 +14,11 @@
   },
   "engines": {
     "node": "0.10.x"
-  }
+  },
+  "readme": "# hubot-nicoencode\n\n## Usage\n\n```\n$ heroku config:set HUBOT_SLACK_TOKEN=***\n$ heroku config:set HEROKU_URL=https://yourapp.herokuapp.com/\n$ heroku config:set NICOVIDEO_DUMP_EMAIL=***\n$ heroku config:set NICOVIDEO_DUMP_PASSWORD=***\n$ heroku buildpack:set https://github.com/heroku/heroku-buildpack-multi.git\n$ git push heroku master\n```\n",
+  "readmeFilename": "README.md",
+  "_id": "hubot-nicoencode@0.0.0",
+  "_shasum": "050b36e780701633a13696490c0b376551ab3789",
+  "_resolved": "git://github.com/kaminogi/hubot-nicoencode#00eb92ab487dd33bac8eb3569bb4d64227e4f62a",
+  "_from": "hubot-nicoencode@git://github.com/kaminogi/hubot-nicoencode"
 }
