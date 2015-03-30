@@ -3,7 +3,7 @@ fs = require('fs')
 path = require('path')
 
 module.exports = (robot) ->
-  robot.router.get "/hubot/temp.mp3", (req, res) ->
+  robot.router.get "/encoded/temp.mp3", (req, res) ->
     query = querystring.parse(req._parsedUrl.query)
     tmp = path.join(__dirname, '..', 'tmp',query.id)
     fs.exists tmp, (exists) ->

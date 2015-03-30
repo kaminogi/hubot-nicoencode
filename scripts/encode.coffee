@@ -9,9 +9,9 @@ module.exports = (robot) ->
     videoUrl = "http://www.nicovideo.jp/watch/#{msg.match[1]}"
     fileName = "#{randomStr()}.mp3"
 
-    msg.send "#{videoUrl} のエンコードを開始します"
-    cmd = "bin/nicovideo-dump #{videoUrl} | ffmpeg -i pipe:0 -ab 196k tmp/#{fileName}"
+    msg.send "了解。 #{videoUrl} のエンコードを始める。"
+    cmd = "bin/nicovideo-dump #{videoUrl} | ffmpeg -i pipe:0 -ab 192k tmp/#{fileName}"
     exec cmd, (error, stdout, stderr) ->
       console.log('stdout: ' + stdout)
       console.log('stderr: ' + stderr)
-      msg.send "#{msg.match[1]} のエンコードが終了しました\n#{process.env.HEROKU_URL}hubot/temp.mp3?id=#{fileName}"
+      msg.send ":star2: #{msg.match[1]} のエンコードが終わった。 \n#{process.env.ACCESS_URL}encoded/temp.mp3?id=#{fileName}"
