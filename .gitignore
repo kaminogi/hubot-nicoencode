@@ -3,7 +3,7 @@
 /node_modules
 /.hubot_history
 /.envrc
-/tmp/*
+/files/*
 
 /vendor/bundle
 /.bundle
