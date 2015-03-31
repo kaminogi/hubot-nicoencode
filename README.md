@@ -1,5 +1,7 @@
 # hubot-nicoencode
 
+Thanks to @tigberd!
+
 This is for personal / experimental release.
 
 Be careful of copyrights.
@@ -13,6 +15,16 @@ Botの言語は日本語です。
 著作権には十分に留意して利用してください。
 このソフトウェアを生じて発生したいかなる損害にも、その責任を負いません。
 あくまで実験および検証用のリリースである旨をご理解ください。
+
+## Usage
+
+hubot宛に `hubot mp3 <ニコ動のURL>` を話しかけると、自動的に変換して192k mp3化してくれます。
+
+Speak to your hubot `hubot mp3 <nicovideo URL>`, it will automatically convert the video to mp3 192k.
+
+```
+hubot mp3 http://www.nicovideo.jp/watch/sm25113423
+```
 
 
 ## Requirements
@@ -49,12 +61,7 @@ $ export NICOVIDEO_DUMP_EMAIL=***
 $ export NICOVIDEO_DUMP_PASSWORD=***
 ```
 
-## Usage
-
-```
-hubot mp3 http://www.nicovideo.jp/watch/sm25113423s
-```
-
 ## Contributing
 
 * Fork me on GitHub
+
