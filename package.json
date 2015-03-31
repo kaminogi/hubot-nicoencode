@@ -5,6 +5,9 @@
   "author": {
     "name": "kaminogi"
   },
+  "contributors": [{
+  "name": "dionore"
+  }],
   "main": "scripts/encode.coffee",
   "description": "MP3 encoder from NicoNico Douga / Experimental use only",
   "dependencies": {

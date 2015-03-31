@@ -3,14 +3,27 @@
 This is for personal / experimental release.
 
 Be careful of copyrights.
+We don't take responsibility for any damage. 
 
-日本語です。
+The language is Japanese, change them if you need (Maybe easy for do that). 
 
-## Requirement
+Botの言語は日本語です。
+自分用にカスタマイズしてますので適宜変更してご利用ください。
 
-`ffmpeg`
+著作権には十分に留意して利用してください。
+このソフトウェアを生じて発生したいかなる損害にも、その責任を負いません。
+あくまで実験および検証用のリリースである旨をご理解ください。
 
-## Usage
+
+## Requirements
+
+CentOS 6系（本番）、OSX（開発）で動作を確認しています。
+
+* ffmpeg > 2.2
+* curl > 7.4
+* ruby > 2.2
+
+## Install
 
 Edit your external-scripts.json
 
@@ -20,10 +33,15 @@ Edit your external-scripts.json
 ]
 ```
 
+Clone into the node_modules directory.
+
 ```
 $ cd ~/path/to/your-hubot/node_modules
-$ git clone <THIS>
+$ git clone https://github.com/kaminogi/hubot-nicoencode
+$ cd hubot-nicoencode
+$ npm install
 ```
+Set the envs.
 
 ```
 $ export ACCESS_URL=http://localhost:8080/
@@ -31,4 +49,12 @@ $ export NICOVIDEO_DUMP_EMAIL=***
 $ export NICOVIDEO_DUMP_PASSWORD=***
 ```
 
+## Usage
 
+```
+hubot mp3 http://www.nicovideo.jp/watch/sm25113423s
+```
+
+## Contributing
+
+* Fork me on GitHub
